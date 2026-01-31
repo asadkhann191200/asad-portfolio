@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Asad Portfolio</title>
+
+<style>
+
+/* ===== Reset ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ===== Body ===== */
+body{
+    background: linear-gradient(135deg,#0f0f0f,#1c1c1c,#000);
+    color:white;
+    line-height:1.6;
+}
+
+/* ===== Container (NEW - compact layout) ===== */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+/* ===== Logo ===== */
+.logo{
+    position:fixed;
+    top:15px;
+    left:20px;
+    width:80px;
+}
+
+/* ===== Navbar ===== */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.85);
+    padding:15px;
+    text-align:center;
+    backdrop-filter: blur(6px);
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 14px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* ===== Sections (FIXED) ===== */
+section{
+    padding:90px 0 60px;   /* compact spacing */
+    text-align:center;
+}
+
+/* ===== Headings spacing ===== */
+h1,h2,h3,p{
+    margin:10px 0;
+}
+
+/* ===== Hero ===== */
+.hero h1{
+    font-size:42px;
+}
+
+.hero span{
+    color:#00ffff;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 24px;
+    background:#00ffff;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* ===== Skills ===== */
+.skills-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.card{
+    background:#1f1f1f;
+    padding:18px;
+    width:140px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:#00ffff;
+    color:black;
+}
+
+/* ===== Contact ===== */
+input, textarea{
+    width:260px;
+    padding:10px;
+    margin:6px;
+    border:none;
+    border-radius:6px;
+}
+
+button{
+    padding:10px 20px;
+    background:#00ffff;
+    border:none;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* ===== Footer ===== */
+footer{
+    padding:15px;
+    background:black;
+    font-size:14px;
+}
+
+/* ===== Mobile ===== */
+@media(max-width:600px){
+    .hero h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<img src="logo.png" class="logo">
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <h1>Hello, I'm <span>Asad</span> 👋</h1>
+        <h3>Web Developer | BCA Student</h3>
+        <p>I build modern websites and love coding.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</section>
+
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer learning HTML, CSS, JavaScript and Python.
+            My goal is to become a professional Full Stack Developer.
+        </p>
+    </div>
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+
+        <div class="skills-box">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Python</div>
+            <div class="card">C</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+
+        
+<form action="https://formspree.io/f/mblpwkyv" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required><br>
+
+    <input type="email" name="email" placeholder="Your Email" required><br>
+
+    <textarea name="message" placeholder="Message" required></textarea><br>
+
+    <button type="submit">Send</button>
+
+</form>
+
+
+
+<footer>
+    © 2026 Asad | All Rights Reserved
+</footer>
+
+</body>
+</html>
